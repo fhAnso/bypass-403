@@ -1,25 +1,57 @@
 # Bypass-403
-- A simple script just made for self use for bypassing 403
+- A simple script for bypassing 403
 - It can also be used to compare responses on verious conditions as shown in the below snap
-![](responses.jpg)
+![responsesNew.png](https://github.com/fhAnso/bypass-403/blob/main/responsesNew.png)
 
-# Usage
-`./bypass-403.sh https://example.com admin`
+## Usage
+```txt
+Usage: bypass-403.sh [options]
 
-`./bypass-403.sh website-here path-here`
+-h, --help    Display this help banner
+-u, --url     Target URL
+-p, --path    Target path
+-c, --cookie  Session cookie
 
-# Features
-- Use 24 known Bypasses for 403 with the help of curl
+Example: ./bypass-403.sh -u http://targetsite.xyz -p secret
+```
 
-# Installation
-   * `git clone https://github.com/iamj0ker/bypass-403`
-   * `cd bypass-403`
-   * `chmod +x bypass-403.sh`
-   * `sudo apt install figlet`  - If you are unable to see the logo as in the screenshot
-   * `sudo apt install jq`      - If you don't have jq installed on your machine
+## Features
+- Use 25 known Bypasses for 403 with the help of curl
+
+## Installation
+- Clone the repository
+```bash
+git clone https://github.com/fhAnso/bypass-403.git
+```
+- Make this script `executable` 
+```bash
+chmod +x bypass-403.sh
+```
+`Optional`: Install the external tools `jq` and `figlet` with the package manager of your operating system
+- APT:
+```bash
+sudo apt install figlet
+```
+```bash
+sudo apt install jq
+```
+- DNF:
+```bash
+sudo dnf install figlet
+```
+```bash
+sudo dnf install jq
+```
+- Pacman
+```bash
+sudo pacman -S figlet
+```
+```bash
+sudo pacman -S jq
+```
    
-# Contributers
+## Contributors
   [remonsec](https://github.com/remonsec),
-  [manpreet](https://github.com/manpreet406)
-  [MayankPandey01](https://github.com/MayankPandey01)
-  [saadibabar](https://github.com/saadibabar)
+  [manpreet](https://github.com/manpreet406),
+  [MayankPandey01](https://github.com/MayankPandey01),
+  [saadibabar](https://github.com/saadibabar),
